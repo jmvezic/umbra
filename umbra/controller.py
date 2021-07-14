@@ -51,7 +51,7 @@ class AmqpBrowserController:
     logger = logging.getLogger(__module__ + "." + __qualname__)
 
     def __init__(self, amqp_url='amqp://guest:guest@localhost:5672/%2f',
-            chrome_exe='chromium-browser', max_active_browsers=1,
+            chrome_exe='chromium --headless', max_active_browsers=1,
             queue_name='urls', exchange_name='umbra', routing_key='urls'):
         self.amqp_url = amqp_url
         self.queue_name = queue_name
