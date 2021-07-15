@@ -17,12 +17,13 @@ Umbra can be used with the Heritrix web crawler, using these heritrix modules:
 
 Install
 ------
-Install via pip from this repo, e.g.
-
-    pip install git+https://github.com/jmvezic/umbra
 
 Umbra requires an AMQP messaging service like RabbitMQ. On Ubuntu,
 `sudo apt-get install rabbitmq-server` will install and start RabbitMQ at amqp://guest:guest@localhost:5672/%2f, which is the default AMQP url for umbra.
+
+Install via pip from this repo, e.g.
+
+    pip3 install git+https://github.com/jmvezic/umbra
 
 Run
 ---
